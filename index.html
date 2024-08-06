@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Complexity Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Algorithm Complexity Visualizer</h1>
+        <p>Select an algorithm to visualize its time and space complexity.</p>
+    </header>
+    <main>
+        <div class="dropdown-container">
+            <label for="algorithm-select">Choose an algorithm:</label>
+            <select id="algorithm-select">
+                <option value="fibonacci">Fibonacci</option>
+                <option value="binomial">Binomial Coefficient</option>
+                <option value="subset_sum">Subset Sum</option>
+                <option value="coin_change">Coin Change</option>
+                <option value="fast_power">Fast Power</option>
+                <option value="knapsack">0-1 Knapsack</option>
+                <option value="tsp">Travelling Salesman</option>
+                <option value="lcs">Longest Common Subsequence</option>
+                <option value="tower_of_hanoi">Tower of Hanoi</option>
+            </select>
+        </div>
+        <div class="chart-container">
+            <canvas id="time-complexity-chart"></canvas>
+            <canvas id="space-complexity-chart"></canvas>
+        </div>
+        <div id="complexity-info">
+            <p id="time-complexity-text"></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Recursive Call Tree. By Daksh G, Varsha H, Anjali H All rights reserved.</p>
+        <p>Department of Information Science and Engineering, Batch 26'</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
